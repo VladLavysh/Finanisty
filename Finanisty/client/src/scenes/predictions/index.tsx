@@ -55,12 +55,12 @@ const Predictions = () => {
         <Button
           onClick={() => setIsPredictions(!isPredictions)}
           sx={{
-            color: palette.grey[900],
-            backgroundColor: palette.grey[700],
+            color: palette.grey[200],
+            backgroundColor: palette.secondary[700],
             boxShadow: "0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,.4)",
           }}
         >
-          Show Predicted Revenue for Next Year
+          { isPredictions ? 'Hide' : 'Show' } Predicted Revenue for Next Year
         </Button>
       </FlexBetween>
       <ResponsiveContainer width="100%" height="100%">
